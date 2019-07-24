@@ -12362,7 +12362,7 @@ VDC 12V - 50mA</description>
 </library>
 <library name="ClinicalRobotics">
 <packages>
-<package name="P-TSSOP28-1" urn="urn:adsk.eagle:footprint:8084060/1">
+<package name="DRV8825">
 <description>Infineon &lt;b&gt;P-TSSOP-28-1&lt;/b&gt;&lt;p&gt;
 TDA 6060 XS cross-ref_pFET-60v_p_chan.pdf</description>
 <wire x1="-4.775" y1="-2.1" x2="4.775" y2="-2.1" width="0.2032" layer="21"/>
@@ -12428,6 +12428,7 @@ TDA 6060 XS cross-ref_pFET-60v_p_chan.pdf</description>
 <rectangle x1="-3.035" y1="2.17" x2="-2.815" y2="3.2" layer="51"/>
 <rectangle x1="-3.685" y1="2.17" x2="-3.465" y2="3.2" layer="51"/>
 <rectangle x1="-4.335" y1="2.17" x2="-4.115" y2="3.2" layer="51"/>
+<smd name="HEAT" x="0" y="0" dx="5.18" dy="3.1" layer="1"/>
 </package>
 <package name="SMD_4P_SWITCH">
 <smd name="P$1" x="-1.27" y="-3.81" dx="1.27" dy="0.762" layer="1" rot="R90"/>
@@ -12464,16 +12465,6 @@ TDA 6060 XS cross-ref_pFET-60v_p_chan.pdf</description>
 <wire x1="1" y1="-1.75" x2="-1.25" y2="-1.75" width="0.127" layer="51"/>
 <wire x1="-1.25" y1="-1.75" x2="-1.25" y2="1.5" width="0.127" layer="51"/>
 </package>
-<package name="SOD-323">
-<smd name="P$1" x="-1.055" y="0" dx="0.59" dy="0.45" layer="1"/>
-<smd name="P$2" x="1.055" y="0" dx="0.59" dy="0.45" layer="1"/>
-<polygon width="0.127" layer="21">
-<vertex x="0" y="0"/>
-<vertex x="-0.254" y="0.254"/>
-<vertex x="-0.254" y="-0.254"/>
-</polygon>
-<wire x1="0.127" y1="0.254" x2="0.127" y2="-0.254" width="0.127" layer="21"/>
-</package>
 <package name="RGBLED">
 <smd name="P$1" x="-0.425" y="0.725" dx="0.65" dy="0.85" layer="1" rot="R180"/>
 <smd name="P$2" x="0.425" y="0.725" dx="0.65" dy="0.85" layer="1" rot="R180"/>
@@ -12508,7 +12499,7 @@ TDA 6060 XS cross-ref_pFET-60v_p_chan.pdf</description>
 <pin name="BOUT2" x="-17.78" y="0" length="middle"/>
 <pin name="ISENB" x="-17.78" y="-2.54" length="middle"/>
 <pin name="BOUT1" x="-17.78" y="-5.08" length="middle"/>
-<pin name="VBM" x="-17.78" y="-7.62" length="middle"/>
+<pin name="VMB" x="-17.78" y="-7.62" length="middle"/>
 <pin name="AVREF" x="-17.78" y="-10.16" length="middle"/>
 <pin name="BVREF" x="-17.78" y="-12.7" length="middle"/>
 <pin name="GND0" x="-17.78" y="-15.24" length="middle" direction="pwr"/>
@@ -12525,6 +12516,7 @@ TDA 6060 XS cross-ref_pFET-60v_p_chan.pdf</description>
 <pin name="MODE2" x="17.78" y="12.7" length="middle" rot="R180"/>
 <pin name="NHOME" x="17.78" y="15.24" length="middle" rot="R180"/>
 <pin name="GND1" x="17.78" y="17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="HEAT" x="-2.54" y="-22.86" length="middle" rot="R90"/>
 </symbol>
 <symbol name="SMD_4_P_SWITCH">
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -12644,7 +12636,7 @@ TDA 6060 XS cross-ref_pFET-60v_p_chan.pdf</description>
 <gate name="G$1" symbol="DRV8825" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="P-TSSOP28-1">
+<device name="" package="DRV8825">
 <connects>
 <connect gate="G$1" pin="AOUT1" pad="5"/>
 <connect gate="G$1" pin="AOUT2" pad="7"/>
@@ -12658,6 +12650,7 @@ TDA 6060 XS cross-ref_pFET-60v_p_chan.pdf</description>
 <connect gate="G$1" pin="DIR" pad="20"/>
 <connect gate="G$1" pin="GND0" pad="14"/>
 <connect gate="G$1" pin="GND1" pad="28"/>
+<connect gate="G$1" pin="HEAT" pad="HEAT"/>
 <connect gate="G$1" pin="ISENA" pad="6"/>
 <connect gate="G$1" pin="ISENB" pad="9"/>
 <connect gate="G$1" pin="MODE0" pad="24"/>
@@ -12670,9 +12663,9 @@ TDA 6060 XS cross-ref_pFET-60v_p_chan.pdf</description>
 <connect gate="G$1" pin="NSLEEP" pad="17"/>
 <connect gate="G$1" pin="STEP" pad="22"/>
 <connect gate="G$1" pin="V3P3OUT" pad="15"/>
-<connect gate="G$1" pin="VBM" pad="11"/>
 <connect gate="G$1" pin="VCP" pad="3"/>
 <connect gate="G$1" pin="VMA" pad="4"/>
+<connect gate="G$1" pin="VMB" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12755,12 +12748,12 @@ TDA 6060 XS cross-ref_pFET-60v_p_chan.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE_SOD323">
+<deviceset name="DIODE0805">
 <gates>
 <gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOD-323">
+<device name="" package="0805LED">
 <connects>
 <connect gate="G$1" pin="A" pad="P$1"/>
 <connect gate="G$1" pin="K" pad="P$2"/>
@@ -15225,8 +15218,8 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="R11" library="SmartPrj" deviceset="R-EU_" device="R0603" value="56"/>
 <part name="R12" library="SmartPrj" deviceset="R-EU_" device="R0603" value="22"/>
-<part name="U$16" library="ClinicalRobotics" deviceset="DIODE_SOD323" device=""/>
-<part name="U$17" library="ClinicalRobotics" deviceset="DIODE_SOD323" device=""/>
+<part name="U$16" library="ClinicalRobotics" deviceset="DIODE0805" device=""/>
+<part name="U$17" library="ClinicalRobotics" deviceset="DIODE0805" device=""/>
 <part name="DBG" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2101" device="" package3d_urn="urn:adsk.eagle:package:8078641/1"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="P+18" library="supply1" deviceset="+5V" device=""/>
@@ -15589,8 +15582,8 @@ necessary for solenoids?</text>
 <instance part="GND3" gate="1" x="-35.56" y="-27.94" smashed="yes">
 <attribute name="VALUE" x="-38.1" y="-30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="GND4" gate="1" x="190.5" y="-144.78" smashed="yes">
-<attribute name="VALUE" x="187.96" y="-147.32" size="1.778" layer="96"/>
+<instance part="GND4" gate="1" x="190.5" y="-154.94" smashed="yes">
+<attribute name="VALUE" x="187.96" y="-157.48" size="1.778" layer="96"/>
 </instance>
 <instance part="GND5" gate="1" x="233.68" y="-101.6" smashed="yes">
 <attribute name="VALUE" x="231.14" y="-104.14" size="1.778" layer="96"/>
@@ -15624,12 +15617,12 @@ necessary for solenoids?</text>
 <attribute name="NAME" x="195.58" y="-67.7164" size="1.778" layer="95"/>
 <attribute name="VALUE" x="194.945" y="-65.532" size="1.778" layer="96"/>
 </instance>
-<instance part="C13" gate="G$1" x="208.28" y="-154.94" smashed="yes" rot="MR0">
-<attribute name="NAME" x="206.756" y="-154.559" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="206.756" y="-159.639" size="1.778" layer="96" rot="MR0"/>
+<instance part="C13" gate="G$1" x="208.28" y="-170.18" smashed="yes" rot="MR0">
+<attribute name="NAME" x="206.756" y="-169.799" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="206.756" y="-174.879" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND6" gate="1" x="208.28" y="-170.18" smashed="yes">
-<attribute name="VALUE" x="205.74" y="-172.72" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="208.28" y="-185.42" smashed="yes">
+<attribute name="VALUE" x="205.74" y="-187.96" size="1.778" layer="96"/>
 </instance>
 <instance part="P+12" gate="1" x="205.74" y="-50.8" smashed="yes">
 <attribute name="VALUE" x="203.2" y="-55.88" size="1.778" layer="96" rot="R90"/>
@@ -15659,13 +15652,13 @@ necessary for solenoids?</text>
 <instance part="STP-A" gate="-2" x="154.94" y="-124.46" smashed="yes" rot="R180">
 <attribute name="NAME" x="152.4" y="-123.698" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="R6" gate="G$1" x="187.96" y="-160.02" smashed="yes" rot="R270">
-<attribute name="NAME" x="190.5" y="-161.6964" size="1.778" layer="95"/>
-<attribute name="VALUE" x="189.865" y="-159.512" size="1.778" layer="96"/>
+<instance part="R6" gate="G$1" x="187.96" y="-175.26" smashed="yes" rot="R270">
+<attribute name="NAME" x="190.5" y="-176.9364" size="1.778" layer="95"/>
+<attribute name="VALUE" x="189.865" y="-174.752" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="G$1" x="203.2" y="-149.86" smashed="yes">
-<attribute name="NAME" x="207.518" y="-146.4056" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="203.327" y="-146.558" size="1.778" layer="96" rot="R180"/>
+<instance part="R8" gate="G$1" x="203.2" y="-165.1" smashed="yes">
+<attribute name="NAME" x="207.518" y="-161.6456" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="203.327" y="-161.798" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND9" gate="1" x="172.72" y="-132.08" smashed="yes">
 <attribute name="VALUE" x="170.18" y="-134.62" size="1.778" layer="96"/>
@@ -16145,6 +16138,11 @@ necessary for solenoids?</text>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="GND0"/>
+<wire x1="190.5" y1="-152.4" x2="190.5" y2="-149.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="HEAT"/>
+<wire x1="190.5" y1="-149.86" x2="190.5" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-149.86" x2="190.5" y2="-149.86" width="0.1524" layer="91"/>
+<junction x="190.5" y="-149.86"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -16155,11 +16153,11 @@ necessary for solenoids?</text>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="-167.64" x2="208.28" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="-182.88" x2="208.28" y2="-180.34" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="-165.1" x2="208.28" y2="-160.02" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="-165.1" x2="208.28" y2="-165.1" width="0.1524" layer="91"/>
-<junction x="208.28" y="-165.1"/>
+<wire x1="208.28" y1="-180.34" x2="208.28" y2="-175.26" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-180.34" x2="208.28" y2="-180.34" width="0.1524" layer="91"/>
+<junction x="208.28" y="-180.34"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -17013,11 +17011,11 @@ necessary for solenoids?</text>
 <segment>
 <pinref part="C13" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="V3P3OUT"/>
-<wire x1="208.28" y1="-152.4" x2="208.28" y2="-149.86" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="-149.86" x2="226.06" y2="-149.86" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="-149.86" x2="226.06" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="-167.64" x2="208.28" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="-165.1" x2="226.06" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="-165.1" x2="226.06" y2="-142.24" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<junction x="208.28" y="-149.86"/>
+<junction x="208.28" y="-165.1"/>
 </segment>
 </net>
 <net name="+12VIN" class="0">
@@ -17040,7 +17038,7 @@ necessary for solenoids?</text>
 <junction x="203.2" y="-73.66"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VBM"/>
+<pinref part="U$1" gate="G$1" pin="VMB"/>
 <wire x1="190.5" y1="-134.62" x2="182.88" y2="-134.62" width="0.1524" layer="91"/>
 <label x="182.88" y="-134.62" size="1.778" layer="95"/>
 </segment>
@@ -17187,12 +17185,12 @@ necessary for solenoids?</text>
 <wire x1="190.5" y1="-137.16" x2="185.42" y2="-137.16" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-137.16" x2="185.42" y2="-139.7" width="0.1524" layer="91"/>
 <junction x="185.42" y="-139.7"/>
-<wire x1="185.42" y1="-139.7" x2="185.42" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-139.7" x2="185.42" y2="-165.1" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="-149.86" x2="187.96" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="-165.1" x2="187.96" y2="-165.1" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="-149.86" x2="187.96" y2="-154.94" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="-149.86" x2="187.96" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-165.1" x2="187.96" y2="-170.18" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-165.1" x2="187.96" y2="-165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
