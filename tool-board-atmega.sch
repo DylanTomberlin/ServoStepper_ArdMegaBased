@@ -15185,10 +15185,8 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="U$8" library="ClinicalRobotics" deviceset="SMD_4P_SW" device=""/>
-<part name="RN6" library="resistor-dil" library_urn="urn:adsk.eagle:library:342" deviceset="4R-N" device="CAY16" package3d_urn="urn:adsk.eagle:package:24918/1" value="4k7"/>
-<part name="P+7" library="supply1" deviceset="+5V" device=""/>
+<part name="RN6" library="resistor-dil" library_urn="urn:adsk.eagle:library:342" deviceset="4R-N" device="CAY16" package3d_urn="urn:adsk.eagle:package:24918/1" value="2k2"/>
 <part name="C11" library="SmartPrj" deviceset="C-EU" device="0603-RND" value=".01u"/>
-<part name="R5" library="SmartPrj" deviceset="R-EU_" device="R0603" value="27R"/>
 <part name="C12" library="SmartPrj" deviceset="C-EU" device="0603-RND" value=".1u"/>
 <part name="R7" library="SmartPrj" deviceset="R-EU_" device="R0603" value="1M"/>
 <part name="C13" library="SmartPrj" deviceset="C-EU" device="0603-RND" value=".47u"/>
@@ -15240,6 +15238,11 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <part name="U$21" library="ClinicalRobotics" deviceset="0805LED" device=""/>
 <part name="RN8" library="resistor-dil" library_urn="urn:adsk.eagle:library:342" deviceset="4R-N" device="CAY16" package3d_urn="urn:adsk.eagle:package:24918/1"/>
 <part name="P+20" library="supply1" deviceset="+5V" device=""/>
+<part name="R13" library="SmartPrj" deviceset="R-EU_" device="R0603" value="1M"/>
+<part name="R14" library="SmartPrj" deviceset="R-EU_" device="R0603" value="100"/>
+<part name="R15" library="SmartPrj" deviceset="R-EU_" device="R0603" value="1M"/>
+<part name="R16" library="SmartPrj" deviceset="R-EU_" device="R0603" value="100"/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15272,16 +15275,16 @@ Source: www.epcos.com .. 01430148.pdf</description>
 <text x="228.6" y="-144.78" size="1.778" layer="91">Should this be 
 attached to mcu reset?</text>
 <text x="261.62" y="-121.92" size="1.778" layer="91">Optional resistors to experiment with decay</text>
-<text x="12.7" y="96.52" size="1.778" layer="91">5V Solenoid</text>
-<text x="43.18" y="93.98" size="1.778" layer="91">12V Solenoid</text>
-<text x="-25.4" y="78.74" size="1.778" layer="91">Are current limiting resistors
+<text x="-35.56" y="101.6" size="1.778" layer="91">5V Solenoid</text>
+<text x="15.24" y="93.98" size="1.778" layer="91">12V Solenoid</text>
+<text x="-73.66" y="83.82" size="1.778" layer="91">Are current limiting resistors
 necessary for solenoids?</text>
 <text x="60.96" y="7.62" size="1.778" layer="91">Debug Header</text>
 <text x="172.72" y="25.4" size="1.778" layer="91">Comms with bridge</text>
 <text x="228.6" y="50.8" size="1.778" layer="91">Debug LEDs</text>
 <text x="193.04" y="68.58" size="1.778" layer="91">Need to calc resistor values</text>
 <text x="416.56" y="-50.8" size="1.778" layer="91">Springloaded power pins</text>
-<text x="0" y="25.4" size="1.778" layer="91">Debug dip switch input</text>
+<text x="2.54" y="27.94" size="1.778" layer="91">Debug dip switch input</text>
 </plain>
 <instances>
 <instance part="ICSP" gate="A" x="281.94" y="152.4" smashed="yes">
@@ -15609,16 +15612,9 @@ necessary for solenoids?</text>
 <attribute name="VALUE" x="33.02" y="30.988" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="40.64" y="30.988" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="P+7" gate="1" x="22.86" y="33.02" smashed="yes">
-<attribute name="VALUE" x="24.765" y="35.56" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="C11" gate="G$1" x="180.34" y="-106.68" smashed="yes" rot="MR0">
 <attribute name="NAME" x="178.816" y="-106.299" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="178.816" y="-111.379" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="R5" gate="G$1" x="645.16" y="71.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="643.4836" y="68.58" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="645.668" y="69.215" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="C12" gate="G$1" x="187.96" y="-63.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="186.436" y="-63.119" size="1.778" layer="95" rot="MR0"/>
@@ -15716,44 +15712,44 @@ necessary for solenoids?</text>
 <attribute name="VALUE" x="328.93" y="43.18" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="U$14" gate="G$1" x="426.72" y="-83.82" smashed="yes"/>
-<instance part="U$15" gate="G$1" x="25.4" y="55.88" smashed="yes"/>
-<instance part="U$15" gate="G$2" x="58.42" y="55.88" smashed="yes"/>
-<instance part="GND15" gate="1" x="58.42" y="43.18" smashed="yes">
-<attribute name="VALUE" x="55.88" y="40.64" size="1.778" layer="96"/>
+<instance part="U$15" gate="G$1" x="-22.86" y="60.96" smashed="yes"/>
+<instance part="U$15" gate="G$2" x="30.48" y="55.88" smashed="yes"/>
+<instance part="GND15" gate="1" x="30.48" y="40.64" smashed="yes">
+<attribute name="VALUE" x="27.94" y="38.1" size="1.778" layer="96"/>
 </instance>
-<instance part="GND16" gate="1" x="25.4" y="43.18" smashed="yes">
-<attribute name="VALUE" x="22.86" y="40.64" size="1.778" layer="96"/>
+<instance part="GND16" gate="1" x="-22.86" y="43.18" smashed="yes">
+<attribute name="VALUE" x="-25.4" y="40.64" size="1.778" layer="96"/>
 </instance>
-<instance part="SOL-12V" gate="-1" x="55.88" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="56.642" y="78.74" size="1.524" layer="95" rot="R90"/>
-<attribute name="VALUE" x="54.483" y="75.438" size="1.778" layer="96" rot="R90"/>
+<instance part="SOL-12V" gate="-1" x="27.94" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.702" y="78.74" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="26.543" y="75.438" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SOL-12V" gate="-2" x="58.42" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="59.182" y="78.74" size="1.524" layer="95" rot="R90"/>
+<instance part="SOL-12V" gate="-2" x="30.48" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.242" y="78.74" size="1.524" layer="95" rot="R90"/>
 </instance>
-<instance part="SOL-5V" gate="-1" x="22.86" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.622" y="81.28" size="1.524" layer="95" rot="R90"/>
-<attribute name="VALUE" x="21.463" y="77.978" size="1.778" layer="96" rot="R90"/>
+<instance part="SOL-5V" gate="-1" x="-25.4" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="-24.638" y="86.36" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-26.797" y="83.058" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SOL-5V" gate="-2" x="25.4" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.162" y="81.28" size="1.524" layer="95" rot="R90"/>
+<instance part="SOL-5V" gate="-2" x="-22.86" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="-22.098" y="86.36" size="1.524" layer="95" rot="R90"/>
 </instance>
-<instance part="P+16" gate="1" x="15.24" y="91.44" smashed="yes">
-<attribute name="VALUE" x="17.145" y="93.98" size="1.778" layer="96" rot="R180"/>
+<instance part="P+16" gate="1" x="-33.02" y="96.52" smashed="yes">
+<attribute name="VALUE" x="-31.115" y="99.06" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+17" gate="1" x="48.26" y="88.9" smashed="yes">
-<attribute name="VALUE" x="45.72" y="83.82" size="1.778" layer="96" rot="R90"/>
+<instance part="P+17" gate="1" x="20.32" y="88.9" smashed="yes">
+<attribute name="VALUE" x="17.78" y="83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R11" gate="G$1" x="48.26" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="45.72" y="80.4164" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="46.355" y="78.232" size="1.778" layer="96" rot="R180"/>
+<instance part="R11" gate="G$1" x="20.32" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.78" y="80.4164" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="18.415" y="78.232" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R12" gate="G$1" x="15.24" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.7" y="82.9564" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="13.335" y="80.772" size="1.778" layer="96" rot="R180"/>
+<instance part="R12" gate="G$1" x="-33.02" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="-35.56" y="88.0364" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-34.925" y="85.852" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$16" gate="G$1" x="50.8" y="66.04" smashed="yes" rot="R90"/>
-<instance part="U$17" gate="G$1" x="17.78" y="68.58" smashed="yes" rot="R90"/>
+<instance part="U$16" gate="G$1" x="22.86" y="66.04" smashed="yes" rot="R90"/>
+<instance part="U$17" gate="G$1" x="-30.48" y="73.66" smashed="yes" rot="R90"/>
 <instance part="DBG" gate="-1" x="73.66" y="-17.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="71.12" y="-17.018" size="1.524" layer="95" rot="R180"/>
 <attribute name="VALUE" x="74.422" y="-19.177" size="1.778" layer="96" rot="R180"/>
@@ -15832,6 +15828,25 @@ necessary for solenoids?</text>
 </instance>
 <instance part="P+20" gate="1" x="223.52" y="71.12" smashed="yes">
 <attribute name="VALUE" x="225.425" y="73.66" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R13" gate="G$1" x="5.08" y="55.88" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.62" y="54.2036" size="1.778" layer="95"/>
+<attribute name="VALUE" x="6.985" y="56.388" size="1.778" layer="96"/>
+</instance>
+<instance part="R14" gate="G$1" x="-7.62" y="60.96" smashed="yes">
+<attribute name="NAME" x="-5.9436" y="63.5" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-8.128" y="62.865" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R15" gate="G$1" x="55.88" y="50.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="58.42" y="49.1236" size="1.778" layer="95"/>
+<attribute name="VALUE" x="57.785" y="51.308" size="1.778" layer="96"/>
+</instance>
+<instance part="R16" gate="G$1" x="45.72" y="55.88" smashed="yes">
+<attribute name="NAME" x="47.3964" y="58.42" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="45.212" y="57.785" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND13" gate="1" x="20.32" y="12.7" smashed="yes">
+<attribute name="VALUE" x="17.78" y="10.16" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -15959,7 +15974,7 @@ necessary for solenoids?</text>
 </segment>
 <segment>
 <pinref part="P+16" gate="1" pin="+5V"/>
-<wire x1="15.24" y1="88.9" x2="15.24" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="93.98" x2="-33.02" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -15984,25 +15999,6 @@ necessary for solenoids?</text>
 <pinref part="RN8" gate="C" pin="2"/>
 <wire x1="215.9" y1="55.88" x2="223.52" y2="55.88" width="0.1524" layer="91"/>
 <junction x="223.52" y="55.88"/>
-</segment>
-<segment>
-<pinref part="RN6" gate="D" pin="2"/>
-<wire x1="27.94" y1="12.7" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="17.78" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="22.86" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="RN6" gate="C" pin="2"/>
-<wire x1="30.48" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="RN6" gate="B" pin="2"/>
-<wire x1="30.48" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="RN6" gate="A" pin="2"/>
-<wire x1="30.48" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
-<junction x="27.94" y="17.78"/>
-<junction x="27.94" y="22.86"/>
-<pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="22.86" y1="30.48" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="27.94" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
-<junction x="27.94" y="27.94"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -16194,17 +16190,44 @@ necessary for solenoids?</text>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="U$15" gate="G$2" pin="S"/>
-<wire x1="58.42" y1="45.72" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="43.18" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="45.72" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
+<junction x="30.48" y="45.72"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
 <pinref part="U$15" gate="G$1" pin="S"/>
-<wire x1="25.4" y1="45.72" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="45.72" x2="-22.86" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="-22.86" y1="48.26" x2="-22.86" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="50.8" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="48.26" x2="-22.86" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-22.86" y="48.26"/>
 </segment>
 <segment>
 <wire x1="76.2" y1="-20.32" x2="76.2" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <pinref part="DBG" gate="-1" pin="S"/>
+</segment>
+<segment>
+<pinref part="RN6" gate="D" pin="2"/>
+<wire x1="27.94" y1="12.7" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="17.78" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="22.86" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="RN6" gate="C" pin="2"/>
+<wire x1="30.48" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="RN6" gate="B" pin="2"/>
+<wire x1="30.48" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="RN6" gate="A" pin="2"/>
+<wire x1="30.48" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
+<junction x="27.94" y="17.78"/>
+<junction x="27.94" y="22.86"/>
+<wire x1="20.32" y1="15.24" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -17250,71 +17273,79 @@ necessary for solenoids?</text>
 </segment>
 <segment>
 <pinref part="P+17" gate="1" pin="+12V"/>
-<wire x1="48.26" y1="86.36" x2="48.26" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="86.36" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$15" gate="G$2" pin="G"/>
 <pinref part="IC3" gate="1" pin="PK1(ADC9/PCINT17)"/>
+<wire x1="55.88" y1="55.88" x2="66.04" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="55.88" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="35.56" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<junction x="55.88" y="55.88"/>
+<wire x1="50.8" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="IC3" gate="1" pin="PK0(ADC8/PCINT16)"/>
-<pinref part="U$15" gate="G$1" pin="G"/>
-<wire x1="104.14" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="33.02" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="33.02" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="60.96" x2="5.08" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<junction x="5.08" y="60.96"/>
+<wire x1="5.08" y1="60.96" x2="-2.54" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="U$15" gate="G$2" pin="D"/>
 <pinref part="SOL-12V" gate="-2" pin="S"/>
-<wire x1="58.42" y1="73.66" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="73.66" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U$16" gate="G$1" pin="A"/>
-<wire x1="58.42" y1="66.04" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
-<junction x="58.42" y="66.04"/>
+<wire x1="30.48" y1="66.04" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
+<junction x="30.48" y="66.04"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="U$15" gate="G$1" pin="D"/>
 <pinref part="SOL-5V" gate="-2" pin="S"/>
-<wire x1="25.4" y1="76.2" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="81.28" x2="-22.86" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$17" gate="G$1" pin="A"/>
-<wire x1="25.4" y1="68.58" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
-<junction x="25.4" y="68.58"/>
+<wire x1="-22.86" y1="73.66" x2="-22.86" y2="68.58" width="0.1524" layer="91"/>
+<junction x="-22.86" y="73.66"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="SOL-12V" gate="-1" pin="S"/>
-<wire x1="55.88" y1="71.12" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="71.12" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="73.66" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="73.66" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U$16" gate="G$1" pin="K"/>
-<wire x1="45.72" y1="66.04" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
-<junction x="48.26" y="71.12"/>
+<wire x1="17.78" y1="66.04" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="71.12" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
+<junction x="20.32" y="71.12"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="SOL-5V" gate="-1" pin="S"/>
-<wire x1="22.86" y1="73.66" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="78.74" x2="-25.4" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="U$17" gate="G$1" pin="K"/>
-<wire x1="12.7" y1="68.58" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="71.12" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="71.12" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="73.66" x2="15.24" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="73.66" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
-<junction x="15.24" y="73.66"/>
+<wire x1="-35.56" y1="73.66" x2="-35.56" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="76.2" x2="-33.02" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="76.2" x2="-33.02" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="78.74" x2="-33.02" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="78.74" x2="-33.02" y2="78.74" width="0.1524" layer="91"/>
+<junction x="-33.02" y="78.74"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -17422,6 +17453,20 @@ necessary for solenoids?</text>
 <pinref part="IC3" gate="1" pin="PJ7"/>
 <pinref part="U$8" gate="G$1" pin="1B"/>
 <wire x1="76.2" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="G"/>
+<wire x1="-12.7" y1="60.96" x2="-15.24" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="U$15" gate="G$2" pin="G"/>
+<wire x1="38.1" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
