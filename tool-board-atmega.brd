@@ -2867,14 +2867,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-118.999" y="-6.858" size="1.27" layer="25"/>
 <attribute name="VALUE" x="-118.999" y="-9.652" size="1.27" layer="27"/>
 </element>
-<element name="C14" library="SmartPrj" package="C0603-ROUND" value="22p" x="-44.45" y="52.07" smashed="yes" rot="R180">
-<attribute name="NAME" x="-43.561" y="51.308" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="-43.561" y="54.102" size="1.27" layer="27" rot="R180"/>
-</element>
-<element name="C15" library="SmartPrj" package="C0603-ROUND" value="22p" x="-39.37" y="57.15" smashed="yes" rot="R90">
-<attribute name="NAME" x="-40.132" y="56.261" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="-37.338" y="56.261" size="1.27" layer="27" rot="R90"/>
-</element>
 <element name="C16" library="SmartPrj" package="C0603-ROUND" value="22p" x="-101.6" y="-40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="-102.362" y="-41.529" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-99.568" y="-41.529" size="1.27" layer="27" rot="R90"/>
@@ -2957,14 +2949,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-116.967" y="-41.91" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="-110.363" y="-41.91" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="Q2" library="special" package="QS" value="16MHz" x="-46.99" y="59.69" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-41.91" y="62.357" size="1.27" layer="26" ratio="10" rot="MR0"/>
-<attribute name="VALUE" x="-41.91" y="55.753" size="1.27" layer="28" ratio="10" rot="MR0"/>
-</element>
-<element name="R1" library="SmartPrj" package="R0603-ROUND" value="1M" x="-52.07" y="63.5" smashed="yes">
-<attribute name="NAME" x="-52.959" y="64.389" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-52.959" y="61.468" size="1.27" layer="27"/>
-</element>
 <element name="R10" library="SmartPrj" package="R0603-ROUND" value="4.7k" x="-139.7" y="-10.16" smashed="yes">
 <attribute name="NAME" x="-140.589" y="-9.271" size="1.27" layer="25"/>
 <attribute name="VALUE" x="-140.589" y="-12.192" size="1.27" layer="27"/>
@@ -2980,10 +2964,6 @@ design rules under a new name.</description>
 <element name="R2" library="SmartPrj" package="R0603-ROUND" value="1M" x="-107.95" y="-36.83" smashed="yes">
 <attribute name="NAME" x="-108.839" y="-35.941" size="1.27" layer="25"/>
 <attribute name="VALUE" x="-108.839" y="-38.862" size="1.27" layer="27"/>
-</element>
-<element name="R3" library="SmartPrj" package="R0603-ROUND" value="27R" x="-50.8" y="54.61" smashed="yes">
-<attribute name="NAME" x="-51.689" y="55.499" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-51.689" y="52.578" size="1.27" layer="27"/>
 </element>
 <element name="R4" library="SmartPrj" package="R0603-ROUND" value="27R" x="-107.95" y="-43.18" smashed="yes">
 <attribute name="NAME" x="-108.839" y="-42.291" size="1.27" layer="25"/>
@@ -3158,10 +3138,6 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="94C0765" x="-136.398" y="98.044" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="-97.028" y="76.454" size="1.016" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="Y1" library="SmartPrj" package="RESONATOR" value="16MHz" x="-40.64" y="64.77" smashed="yes">
-<attribute name="NAME" x="-42.09" y="66.12" size="0.3556" layer="25"/>
-<attribute name="VALUE" x="-42.09" y="63.082" size="0.3556" layer="27"/>
-</element>
 <element name="Y2" library="SmartPrj" package="RESONATOR" value="16MHz" x="-119.38" y="-48.26" smashed="yes">
 <attribute name="NAME" x="-120.83" y="-46.91" size="0.3556" layer="25"/>
 <attribute name="VALUE" x="-120.83" y="-49.948" size="0.3556" layer="27"/>
@@ -3297,11 +3273,8 @@ design rules under a new name.</description>
 <contactref element="Y2" pad="2"/>
 <contactref element="UBOOT" pad="2"/>
 <contactref element="C8" pad="2"/>
-<contactref element="Y1" pad="2"/>
 <contactref element="C16" pad="2"/>
 <contactref element="C17" pad="2"/>
-<contactref element="C14" pad="1"/>
-<contactref element="C15" pad="1"/>
 <contactref element="SRV1" pad="1"/>
 <contactref element="SRV2" pad="1"/>
 <contactref element="SRV3" pad="1"/>
@@ -3365,17 +3338,14 @@ design rules under a new name.</description>
 <wire x1="-80.41" y1="73.065" x2="-81.21" y2="73.065" width="0" layer="19" extent="1-1"/>
 <wire x1="-79.61" y1="73.065" x2="-80.41" y2="73.065" width="0" layer="19" extent="1-1"/>
 <wire x1="-78.81" y1="73.065" x2="-79.61" y2="73.065" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.64" y1="64.77" x2="-78.81" y2="73.065" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.37" y1="56.261" x2="-40.64" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="-43.561" y1="52.07" x2="-39.37" y2="56.261" width="0" layer="19" extent="1-1"/>
-<wire x1="-9.652" y1="45.72" x2="-39.37" y2="56.261" width="0" layer="19" extent="1-1"/>
-<wire x1="13.208" y1="45.72" x2="-9.652" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="-165.1" y1="29.21" x2="-138.811" y2="-10.16" width="0" layer="19" extent="1-1"/>
 <wire x1="-162.56" y1="40.64" x2="-165.1" y2="29.21" width="0" layer="19" extent="1-1"/>
 <wire x1="-166.37" y1="53.34" x2="-162.56" y2="40.64" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.46" y1="-95.25" x2="-88.9" y2="-55.88" width="0" layer="19" extent="16-16"/>
 <wire x1="-47.498" y1="-92.71" x2="-55.46" y2="-95.25" width="0" layer="19" extent="1-16"/>
 <wire x1="-67.31" y1="-103.09" x2="-55.46" y2="-95.25" width="0" layer="19" extent="1-16"/>
+<wire x1="-9.652" y1="45.72" x2="-74.55" y2="23.63" width="0" layer="19" extent="1-1"/>
+<wire x1="13.208" y1="45.72" x2="-9.652" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AREF">
 <contactref element="IC3" pad="98"/>
@@ -3659,28 +3629,6 @@ design rules under a new name.</description>
 <wire x1="-52.975" y1="-104.252" x2="-49.022" y2="-92.71" width="0" layer="19" extent="1-1"/>
 <wire x1="0" y1="48.895" x2="-50.63" y2="-87.63" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="XTAL2">
-<contactref element="IC3" pad="33"/>
-<contactref element="Y1" pad="1"/>
-<contactref element="R1" pad="2"/>
-<contactref element="Q2" pad="1"/>
-<contactref element="C15" pad="2"/>
-<wire x1="-51.181" y1="63.5" x2="-85.05" y2="16.13" width="0" layer="19" extent="1-1"/>
-<wire x1="-44.45" y1="59.69" x2="-51.181" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.37" y1="58.039" x2="-44.45" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.64" y1="64.77" x2="-44.45" y2="59.69" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="XTAL1">
-<contactref element="Q2" pad="2"/>
-<contactref element="C14" pad="2"/>
-<contactref element="R1" pad="1"/>
-<contactref element="Y1" pad="3"/>
-<contactref element="R3" pad="2"/>
-<wire x1="-49.53" y1="59.69" x2="-39.64" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="-49.911" y1="54.61" x2="-49.53" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.959" y1="63.5" x2="-49.53" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="-45.339" y1="52.07" x2="-49.911" y2="54.61" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="XT2">
 <contactref element="Y2" pad="1"/>
 <contactref element="IC4" pad="2"/>
@@ -3702,11 +3650,6 @@ design rules under a new name.</description>
 <wire x1="-101.6" y1="-41.529" x2="-107.061" y2="-43.18" width="0" layer="19" extent="1-1"/>
 <wire x1="-108.839" y1="-36.83" x2="-107.061" y2="-43.18" width="0" layer="19" extent="1-1"/>
 <wire x1="-114.3" y1="-34.29" x2="-108.839" y2="-36.83" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="XTAL1R">
-<contactref element="IC3" pad="34"/>
-<contactref element="R3" pad="1"/>
-<wire x1="-51.689" y1="54.61" x2="-84.55" y2="16.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="XT1R">
 <contactref element="IC4" pad="1"/>

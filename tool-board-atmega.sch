@@ -24903,9 +24903,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="UBOOT" library="jumper" deviceset="SJ" device=""/>
 <part name="GROUND" library="jumper" deviceset="SJ" device=""/>
-<part name="Y1" library="SmartPrj" deviceset="RESONATOR" device="MU" value="16MHz"/>
-<part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="SmartPrj" deviceset="R-EU_" device="R0603" value="1M"/>
 <part name="RN4" library="resistor-dil" deviceset="4R-N" device="CAY16" value="1k"/>
 <part name="RN5" library="resistor-dil" deviceset="4R-N" device="CAT16" value="10K"/>
 <part name="RN1" library="resistor-dil" deviceset="4R-N" device="CAT16" value="10K"/>
@@ -24915,14 +24912,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="RESET" library="st-mod v1.4" deviceset="TS42" device=""/>
 <part name="R2" library="SmartPrj" deviceset="R-EU_" device="R0603" value="1M"/>
 <part name="Q1" library="special" deviceset="XTAL/S" device="" value="16MHz"/>
-<part name="Q2" library="special" deviceset="XTAL/S" device="" value="16MHz"/>
-<part name="C14" library="SmartPrj" deviceset="C-EU" device="0603-RND" value="22p"/>
-<part name="C15" library="SmartPrj" deviceset="C-EU" device="0603-RND" value="22p"/>
 <part name="C16" library="SmartPrj" deviceset="C-EU" device="0603-RND" value="22p"/>
 <part name="C17" library="SmartPrj" deviceset="C-EU" device="0603-RND" value="22p"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="SmartPrj" deviceset="R-EU_" device="R0603" value="27R"/>
 <part name="R4" library="SmartPrj" deviceset="R-EU_" device="R0603" value="27R"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="U$1" library="ClinicalRobotics" deviceset="DRV8825" device=""/>
@@ -25185,17 +25177,6 @@ necessary for solenoids?</text>
 <attribute name="NAME" x="411.48" y="19.05" size="1.778" layer="95"/>
 <attribute name="VALUE" x="414.02" y="19.05" size="1.778" layer="96"/>
 </instance>
-<instance part="Y1" gate="G$1" x="55.88" y="129.54" smashed="yes">
-<attribute name="NAME" x="50.8" y="134.112" size="1.778" layer="95"/>
-<attribute name="VALUE" x="45.72" y="121.412" size="1.778" layer="96"/>
-</instance>
-<instance part="GND20" gate="1" x="40.64" y="129.54" smashed="yes" rot="R270">
-<attribute name="VALUE" x="38.1" y="132.08" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R1" gate="G$1" x="27.94" y="129.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="25.4" y="131.2164" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="26.035" y="129.032" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="RN4" gate="A" x="482.6" y="2.54" smashed="yes">
 <attribute name="VALUE" x="485.14" y="-0.508" size="1.778" layer="96"/>
 <attribute name="NAME" x="477.52" y="-0.508" size="1.778" layer="95"/>
@@ -25269,18 +25250,6 @@ necessary for solenoids?</text>
 <attribute name="NAME" x="445.77" y="154.94" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="454.66" y="154.94" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="Q2" gate="G$1" x="467.36" y="160.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="463.55" y="154.94" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="472.44" y="154.94" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="C14" gate="G$1" x="492.76" y="165.1" smashed="yes" rot="MR90">
-<attribute name="NAME" x="490.855" y="171.323" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="493.395" y="172.974" size="1.778" layer="96" rot="MR270"/>
-</instance>
-<instance part="C15" gate="G$1" x="492.76" y="154.94" smashed="yes" rot="MR90">
-<attribute name="NAME" x="490.855" y="161.163" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="493.395" y="162.814" size="1.778" layer="96" rot="MR270"/>
-</instance>
 <instance part="C16" gate="G$1" x="429.26" y="165.1" smashed="yes" rot="MR90">
 <attribute name="NAME" x="427.355" y="171.323" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="429.895" y="172.974" size="1.778" layer="96" rot="MR270"/>
@@ -25291,13 +25260,6 @@ necessary for solenoids?</text>
 </instance>
 <instance part="GND21" gate="1" x="419.1" y="160.02" smashed="yes" rot="R270">
 <attribute name="VALUE" x="416.56" y="162.56" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND27" gate="1" x="500.38" y="160.02" smashed="yes" rot="R90">
-<attribute name="VALUE" x="502.92" y="157.48" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R3" gate="G$1" x="71.12" y="121.92" smashed="yes" rot="R180">
-<attribute name="NAME" x="69.4436" y="119.38" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="71.628" y="120.015" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R4" gate="G$1" x="421.64" y="66.04" smashed="yes" rot="R180">
 <attribute name="NAME" x="419.9636" y="63.5" size="1.778" layer="95" rot="R270"/>
@@ -25889,11 +25851,6 @@ necessary for solenoids?</text>
 <wire x1="355.6" y1="86.36" x2="350.52" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="43.18" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="2"/>
-<pinref part="GND20" gate="1" pin="GND"/>
-</segment>
-<segment>
 <wire x1="424.18" y1="165.1" x2="424.18" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="424.18" y1="160.02" x2="424.18" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="160.02" x2="424.18" y2="160.02" width="0.1524" layer="91"/>
@@ -25901,15 +25858,6 @@ necessary for solenoids?</text>
 <pinref part="C16" gate="G$1" pin="2"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="495.3" y1="165.1" x2="495.3" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="495.3" y1="160.02" x2="495.3" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="497.84" y1="160.02" x2="495.3" y2="160.02" width="0.1524" layer="91"/>
-<junction x="495.3" y="160.02"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<pinref part="C15" gate="G$1" pin="1"/>
-<pinref part="GND27" gate="1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="-35.56" y1="12.7" x2="-35.56" y2="0" width="0.1524" layer="91"/>
@@ -26643,50 +26591,6 @@ necessary for solenoids?</text>
 <label x="403.86" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="XTAL2" class="0">
-<segment>
-<wire x1="81.28" y1="134.62" x2="88.9" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="134.62" x2="88.9" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="132.08" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="132.08" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="137.16" x2="81.28" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="137.16" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="134.62" x2="27.94" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="137.16" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
-<junction x="55.88" y="137.16"/>
-<label x="91.44" y="132.08" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="XTAL2"/>
-<pinref part="Y1" gate="G$1" pin="1"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="467.36" y1="154.94" x2="487.68" y2="154.94" width="0.1524" layer="91"/>
-<label x="477.52" y="154.94" size="1.778" layer="95"/>
-<pinref part="Q2" gate="G$1" pin="1"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="XTAL1" class="0">
-<segment>
-<wire x1="467.36" y1="165.1" x2="487.68" y2="165.1" width="0.1524" layer="91"/>
-<label x="477.52" y="165.1" size="1.778" layer="95"/>
-<pinref part="Q2" gate="G$1" pin="2"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="121.92" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="121.92" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="116.84" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="116.84" x2="55.88" y2="127" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="116.84" x2="27.94" y2="124.46" width="0.1524" layer="91"/>
-<junction x="55.88" y="116.84"/>
-<label x="60.96" y="121.92" size="1.778" layer="95"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="Y1" gate="G$1" pin="3"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="XT2" class="0">
 <segment>
 <wire x1="414.02" y1="73.66" x2="429.26" y2="73.66" width="0.1524" layer="91"/>
@@ -26722,18 +26626,6 @@ necessary for solenoids?</text>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="Y2" gate="G$1" pin="3"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="XTAL1R" class="0">
-<segment>
-<wire x1="104.14" y1="127" x2="88.9" y2="127" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="127" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="124.46" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-<label x="91.44" y="127" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="XTAL1"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="XT1R" class="0">
