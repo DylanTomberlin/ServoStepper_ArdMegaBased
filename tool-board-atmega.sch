@@ -13853,12 +13853,33 @@ Source: RS Component / Phycomp</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+24V" urn="urn:adsk.eagle:symbol:26935/1" library_version="1">
+<wire x1="1.27" y1="-0.635" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+24V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+12V" urn="urn:adsk.eagle:component:26959/1" prefix="P+" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+24V" urn="urn:adsk.eagle:component:26964/1" prefix="P+" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+24V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -27047,6 +27068,11 @@ type V526-0, grid 2.5 mm</description>
 <part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device="" package3d_urn="urn:adsk.eagle:package:8078635/1"/>
 <part name="X3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device="" package3d_urn="urn:adsk.eagle:package:8078635/1"/>
 <part name="X4" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device="" package3d_urn="urn:adsk.eagle:package:8078635/1"/>
+<part name="U$6" library="ClinicalRobotics" deviceset="SPRING_CONTACT" device=""/>
+<part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E3.5-8" package3d_urn="urn:adsk.eagle:package:23360/2" value="100uF"/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
+<part name="GND27" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27651,6 +27677,20 @@ necessary for solenoids?</text>
 <instance part="X4" gate="-4" x="-15.24" y="5.08" smashed="yes">
 <attribute name="NAME" x="-12.7" y="4.318" size="1.524" layer="95"/>
 </instance>
+<instance part="U$6" gate="G$1" x="421.64" y="-111.76" smashed="yes" rot="R180"/>
+<instance part="C14" gate="G$1" x="457.2" y="-114.3" smashed="yes" rot="MR0">
+<attribute name="NAME" x="455.676" y="-113.919" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="455.676" y="-118.999" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND20" gate="1" x="457.2" y="-124.46" smashed="yes">
+<attribute name="VALUE" x="454.66" y="-127" size="1.778" layer="96"/>
+</instance>
+<instance part="P+7" gate="1" x="457.2" y="-101.6" smashed="yes">
+<attribute name="VALUE" x="454.66" y="-106.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND27" gate="1" x="411.48" y="-73.66" smashed="yes">
+<attribute name="VALUE" x="408.94" y="-76.2" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -28047,6 +28087,16 @@ necessary for solenoids?</text>
 <pinref part="GND22" gate="1" pin="GND"/>
 <pinref part="C22" gate="G$1" pin="-"/>
 <wire x1="431.8" y1="-33.02" x2="431.8" y2="-35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<pinref part="C14" gate="G$1" pin="-"/>
+<wire x1="457.2" y1="-121.92" x2="457.2" y2="-119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$11" gate="G$1" pin="P$1"/>
+<wire x1="401.32" y1="-71.12" x2="411.48" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="GND27" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -28657,11 +28707,6 @@ necessary for solenoids?</text>
 <wire x1="340.36" y1="38.1" x2="368.3" y2="38.1" width="0.1524" layer="91"/>
 <junction x="368.3" y="38.1"/>
 </segment>
-<segment>
-<pinref part="U$11" gate="G$1" pin="P$1"/>
-<wire x1="401.32" y1="-71.12" x2="408.94" y2="-71.12" width="0.1524" layer="91"/>
-<label x="403.86" y="-71.12" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="XT2" class="0">
 <segment>
@@ -28812,10 +28857,6 @@ necessary for solenoids?</text>
 <pinref part="U$1" gate="G$1" pin="VMA"/>
 <wire x1="190.5" y1="-116.84" x2="180.34" y2="-116.84" width="0.1524" layer="91"/>
 <label x="182.88" y="-116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$12" gate="G$1" pin="P$1"/>
-<wire x1="414.02" y1="-83.82" x2="416.56" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NFAULT" class="0">
@@ -29033,10 +29074,11 @@ necessary for solenoids?</text>
 <net name="+12V" class="0">
 <segment>
 <pinref part="P+15" gate="1" pin="+12V"/>
-<wire x1="436.88" y1="-83.82" x2="439.42" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="439.42" y1="-83.82" x2="439.42" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="C19" gate="G$1" pin="+"/>
 <junction x="439.42" y="-83.82"/>
+<pinref part="U$12" gate="G$1" pin="P$1"/>
+<wire x1="414.02" y1="-83.82" x2="439.42" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+17" gate="1" pin="+12V"/>
@@ -29281,6 +29323,16 @@ necessary for solenoids?</text>
 <pinref part="IC3" gate="1" pin="(AD4)PA4"/>
 <wire x1="175.26" y1="129.54" x2="187.96" y2="129.54" width="0.1524" layer="91"/>
 <label x="177.8" y="129.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+24V" class="0">
+<segment>
+<wire x1="457.2" y1="-111.76" x2="457.2" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="+"/>
+<junction x="457.2" y="-111.76"/>
+<pinref part="U$6" gate="G$1" pin="P$1"/>
+<wire x1="431.8" y1="-111.76" x2="457.2" y2="-111.76" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="1" pin="+24V"/>
 </segment>
 </net>
 </nets>
