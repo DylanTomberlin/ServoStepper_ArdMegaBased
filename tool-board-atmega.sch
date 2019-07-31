@@ -12816,21 +12816,6 @@ chip</description>
 <description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="22-23-2031" urn="urn:adsk.eagle:footprint:8078260/1" library_version="3">
-<description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 3 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232031_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
-<wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="21"/>
-<wire x1="3.81" y1="3.175" x2="3.81" y2="1.27" width="0.254" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="3.81" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="1.27" width="0.254" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="3.175" width="0.254" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.254" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
-<text x="-3.81" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="22-23-2021" urn="urn:adsk.eagle:footprint:8078259/1" library_version="3">
 <description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 2 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232021_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
 <wire x1="-2.54" y1="3.175" x2="2.54" y2="3.175" width="0.254" layer="21"/>
@@ -12867,14 +12852,24 @@ chip</description>
 <text x="-12.7" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 <text x="-12.7" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="22-23-2041" urn="urn:adsk.eagle:footprint:8078261/1" library_version="4">
+<description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 4 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232041_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
+<wire x1="-5.08" y1="3.175" x2="5.08" y2="3.175" width="0.254" layer="21"/>
+<wire x1="5.08" y1="3.175" x2="5.08" y2="1.27" width="0.254" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="5.08" y1="-3.175" x2="-5.08" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="-3.175" x2="-5.08" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-5.08" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
-<package3d name="22-23-2031" urn="urn:adsk.eagle:package:8078634/1" type="box" library_version="3">
-<description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 3 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232031_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
-<packageinstances>
-<packageinstance name="22-23-2031"/>
-</packageinstances>
-</package3d>
 <package3d name="22-23-2021" urn="urn:adsk.eagle:package:8078633/1" type="box" library_version="3">
 <description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 2 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232021_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
 <packageinstances>
@@ -12885,6 +12880,12 @@ chip</description>
 <description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 10 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232101_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
 <packageinstances>
 <packageinstance name="22-23-2101"/>
+</packageinstances>
+</package3d>
+<package3d name="22-23-2041" urn="urn:adsk.eagle:package:8078635/1" type="box" library_version="4">
+<description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 4 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232041_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
+<packageinstances>
+<packageinstance name="22-23-2041"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -12902,35 +12903,7 @@ chip</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="22-23-2031" urn="urn:adsk.eagle:component:8078937/1" prefix="X" library_version="3">
-<description>.100" (2.54mm) Center Header - 3 Pin</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="22-23-2031">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:8078634/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MOLEX" constant="no"/>
-<attribute name="MPN" value="22-23-2031" constant="no"/>
-<attribute name="OC_FARNELL" value="1462950" constant="no"/>
-<attribute name="OC_NEWARK" value="30C0862" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="22-23-2021" urn="urn:adsk.eagle:component:8078938/1" prefix="X" library_version="3">
+<deviceset name="22-23-2021" urn="urn:adsk.eagle:component:8078938/2" prefix="X" library_version="4">
 <description>.100" (2.54mm) Center Header - 2 Pin</description>
 <gates>
 <gate name="-1" symbol="MV" x="0" y="0" addlevel="always" swaplevel="1"/>
@@ -12951,12 +12924,13 @@ chip</description>
 <attribute name="MPN" value="22-23-2021" constant="no"/>
 <attribute name="OC_FARNELL" value="1462926" constant="no"/>
 <attribute name="OC_NEWARK" value="25C3832" constant="no"/>
+<attribute name="POPULARITY" value="40" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="22-23-2101" urn="urn:adsk.eagle:component:8078966/1" prefix="X" library_version="3">
+<deviceset name="22-23-2101" urn="urn:adsk.eagle:component:8078966/2" prefix="X" library_version="4">
 <description>.100" (2.54mm) Center Header - 10 Pin</description>
 <gates>
 <gate name="-1" symbol="MV" x="0" y="10.16" addlevel="always" swaplevel="1"/>
@@ -12993,6 +12967,38 @@ chip</description>
 <attribute name="MPN" value="22-23-2101" constant="no"/>
 <attribute name="OC_FARNELL" value="1756828" constant="no"/>
 <attribute name="OC_NEWARK" value="94C0765" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22-23-2041" urn="urn:adsk.eagle:component:8078936/2" prefix="X" library_version="4">
+<description>.100" (2.54mm) Center Header - 4 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2041">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8078635/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2041" constant="no"/>
+<attribute name="OC_FARNELL" value="1462920" constant="no"/>
+<attribute name="OC_NEWARK" value="38C0355" constant="no"/>
+<attribute name="POPULARITY" value="21" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -26970,9 +26976,6 @@ type V526-0, grid 2.5 mm</description>
 <part name="R4" library="SmartPrj" deviceset="R-EU_" device="R0603" value="27R"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="U$1" library="ClinicalRobotics" deviceset="DRV8825" device=""/>
-<part name="SRV1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device="" package3d_urn="urn:adsk.eagle:package:8078634/1"/>
-<part name="SRV2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device="" package3d_urn="urn:adsk.eagle:package:8078634/1"/>
-<part name="SRV3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device="" package3d_urn="urn:adsk.eagle:package:8078634/1"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -27041,6 +27044,9 @@ type V526-0, grid 2.5 mm</description>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E3.5-8" package3d_urn="urn:adsk.eagle:package:23360/2" value="100uF"/>
+<part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device="" package3d_urn="urn:adsk.eagle:package:8078635/1"/>
+<part name="X3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device="" package3d_urn="urn:adsk.eagle:package:8078635/1"/>
+<part name="X4" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device="" package3d_urn="urn:adsk.eagle:package:8078635/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -27068,7 +27074,7 @@ type V526-0, grid 2.5 mm</description>
 <text x="-17.78" y="20.32" size="1.778" layer="91">Servos</text>
 <text x="-5.08" y="7.62" size="1.778" layer="91">Servo 1</text>
 <text x="-5.08" y="-2.54" size="1.778" layer="91">Servo 2</text>
-<text x="-5.08" y="-15.24" size="1.778" layer="91">Servo 3</text>
+<text x="-5.08" y="-20.32" size="1.778" layer="91">Servo 3</text>
 <text x="205.74" y="-86.36" size="1.778" layer="91">Thru hole bulk</text>
 <text x="228.6" y="-144.78" size="1.778" layer="91">Should this be 
 attached to mcu reset?</text>
@@ -27321,36 +27327,6 @@ necessary for solenoids?</text>
 <attribute name="VALUE" x="372.745" y="104.14" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U$1" gate="G$1" x="208.28" y="-127" smashed="yes"/>
-<instance part="SRV1" gate="-1" x="-15.24" y="12.7" smashed="yes">
-<attribute name="NAME" x="-12.7" y="11.938" size="1.524" layer="95"/>
-<attribute name="VALUE" x="-16.002" y="14.097" size="1.778" layer="96"/>
-</instance>
-<instance part="SRV1" gate="-2" x="-15.24" y="10.16" smashed="yes">
-<attribute name="NAME" x="-12.7" y="9.398" size="1.524" layer="95"/>
-</instance>
-<instance part="SRV1" gate="-3" x="-15.24" y="7.62" smashed="yes">
-<attribute name="NAME" x="-12.7" y="6.858" size="1.524" layer="95"/>
-</instance>
-<instance part="SRV2" gate="-1" x="-15.24" y="0" smashed="yes">
-<attribute name="NAME" x="-12.7" y="-0.762" size="1.524" layer="95"/>
-<attribute name="VALUE" x="-16.002" y="1.397" size="1.778" layer="96"/>
-</instance>
-<instance part="SRV2" gate="-2" x="-15.24" y="-2.54" smashed="yes">
-<attribute name="NAME" x="-12.7" y="-3.302" size="1.524" layer="95"/>
-</instance>
-<instance part="SRV2" gate="-3" x="-15.24" y="-5.08" smashed="yes">
-<attribute name="NAME" x="-12.7" y="-5.842" size="1.524" layer="95"/>
-</instance>
-<instance part="SRV3" gate="-1" x="-15.24" y="-12.7" smashed="yes">
-<attribute name="NAME" x="-12.7" y="-13.462" size="1.524" layer="95"/>
-<attribute name="VALUE" x="-16.002" y="-11.303" size="1.778" layer="96"/>
-</instance>
-<instance part="SRV3" gate="-2" x="-15.24" y="-15.24" smashed="yes">
-<attribute name="NAME" x="-12.7" y="-16.002" size="1.524" layer="95"/>
-</instance>
-<instance part="SRV3" gate="-3" x="-15.24" y="-17.78" smashed="yes">
-<attribute name="NAME" x="-12.7" y="-18.542" size="1.524" layer="95"/>
-</instance>
 <instance part="P+4" gate="1" x="-40.64" y="20.32" smashed="yes">
 <attribute name="VALUE" x="-38.735" y="22.86" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -27636,6 +27612,45 @@ necessary for solenoids?</text>
 <attribute name="NAME" x="430.276" y="-27.559" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="430.276" y="-32.639" size="1.778" layer="96" rot="MR0"/>
 </instance>
+<instance part="X1" gate="-1" x="-15.24" y="-12.7" smashed="yes">
+<attribute name="NAME" x="-12.7" y="-13.462" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-16.002" y="-11.303" size="1.778" layer="96"/>
+</instance>
+<instance part="X1" gate="-2" x="-15.24" y="-15.24" smashed="yes">
+<attribute name="NAME" x="-12.7" y="-16.002" size="1.524" layer="95"/>
+</instance>
+<instance part="X1" gate="-3" x="-15.24" y="-17.78" smashed="yes">
+<attribute name="NAME" x="-12.7" y="-18.542" size="1.524" layer="95"/>
+</instance>
+<instance part="X1" gate="-4" x="-15.24" y="-20.32" smashed="yes">
+<attribute name="NAME" x="-12.7" y="-21.082" size="1.524" layer="95"/>
+</instance>
+<instance part="X3" gate="-1" x="-15.24" y="0" smashed="yes">
+<attribute name="NAME" x="-12.7" y="-0.762" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-16.002" y="1.397" size="1.778" layer="96"/>
+</instance>
+<instance part="X3" gate="-2" x="-15.24" y="-2.54" smashed="yes">
+<attribute name="NAME" x="-12.7" y="-3.302" size="1.524" layer="95"/>
+</instance>
+<instance part="X3" gate="-3" x="-15.24" y="-5.08" smashed="yes">
+<attribute name="NAME" x="-12.7" y="-5.842" size="1.524" layer="95"/>
+</instance>
+<instance part="X3" gate="-4" x="-15.24" y="-7.62" smashed="yes">
+<attribute name="NAME" x="-12.7" y="-8.382" size="1.524" layer="95"/>
+</instance>
+<instance part="X4" gate="-1" x="-15.24" y="12.7" smashed="yes">
+<attribute name="NAME" x="-12.7" y="11.938" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-16.002" y="14.097" size="1.778" layer="96"/>
+</instance>
+<instance part="X4" gate="-2" x="-15.24" y="10.16" smashed="yes">
+<attribute name="NAME" x="-12.7" y="9.398" size="1.524" layer="95"/>
+</instance>
+<instance part="X4" gate="-3" x="-15.24" y="7.62" smashed="yes">
+<attribute name="NAME" x="-12.7" y="6.858" size="1.524" layer="95"/>
+</instance>
+<instance part="X4" gate="-4" x="-15.24" y="5.08" smashed="yes">
+<attribute name="NAME" x="-12.7" y="4.318" size="1.524" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -27744,17 +27759,17 @@ necessary for solenoids?</text>
 </segment>
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
-<pinref part="SRV1" gate="-2" pin="S"/>
 <wire x1="-40.64" y1="17.78" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="10.16" x2="-17.78" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="SRV3" gate="-2" pin="S"/>
 <wire x1="-17.78" y1="-15.24" x2="-40.64" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-15.24" x2="-40.64" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="SRV2" gate="-2" pin="S"/>
 <wire x1="-40.64" y1="-2.54" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-2.54" x2="-40.64" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="-40.64" y="10.16"/>
 <junction x="-40.64" y="-2.54"/>
+<pinref part="X1" gate="-2" pin="S"/>
+<pinref part="X3" gate="-2" pin="S"/>
+<pinref part="X4" gate="-2" pin="S"/>
 </segment>
 <segment>
 <pinref part="P+11" gate="1" pin="+5V"/>
@@ -27787,6 +27802,12 @@ necessary for solenoids?</text>
 <pinref part="RN8" gate="C" pin="2"/>
 <wire x1="215.9" y1="55.88" x2="223.52" y2="55.88" width="0.1524" layer="91"/>
 <junction x="223.52" y="55.88"/>
+<pinref part="U$19" gate="G$1" pin="A"/>
+<wire x1="223.52" y1="25.4" x2="243.84" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="25.4" x2="243.84" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="58.42" x2="228.6" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="58.42" x2="228.6" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="55.88" x2="223.52" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="431.8" y1="-22.86" x2="431.8" y2="-25.4" width="0.1524" layer="91"/>
@@ -27913,17 +27934,17 @@ necessary for solenoids?</text>
 </segment>
 <segment>
 <wire x1="-35.56" y1="12.7" x2="-35.56" y2="0" width="0.1524" layer="91"/>
-<pinref part="SRV1" gate="-1" pin="S"/>
 <wire x1="-35.56" y1="0" x2="-35.56" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="12.7" x2="-35.56" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="SRV2" gate="-1" pin="S"/>
 <wire x1="-35.56" y1="0" x2="-17.78" y2="0" width="0.1524" layer="91"/>
-<pinref part="SRV3" gate="-1" pin="S"/>
 <wire x1="-35.56" y1="-12.7" x2="-17.78" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="-25.4" x2="-35.56" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-35.56" y="0"/>
 <junction x="-35.56" y="-12.7"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="X1" gate="-1" pin="S"/>
+<pinref part="X3" gate="-1" pin="S"/>
+<pinref part="X4" gate="-1" pin="S"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -28160,6 +28181,11 @@ necessary for solenoids?</text>
 <label x="177.8" y="109.855" size="1.6764" layer="95"/>
 <pinref part="IC3" gate="1" pin="(OC1A/PCINT5)PB5"/>
 </segment>
+<segment>
+<wire x1="-17.78" y1="7.62" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
+<label x="-22.86" y="7.62" size="1.778" layer="95"/>
+<pinref part="X4" gate="-3" pin="S"/>
+</segment>
 </net>
 <net name="PB4" class="0">
 <segment>
@@ -28175,11 +28201,6 @@ necessary for solenoids?</text>
 <pinref part="IC3" gate="1" pin="(OC3C/INT5)PE5"/>
 <pinref part="RN7" gate="A" pin="1"/>
 </segment>
-<segment>
-<pinref part="SRV3" gate="-3" pin="S"/>
-<wire x1="-17.78" y1="-17.78" x2="-20.32" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-22.86" y="-20.32" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="PE4" class="0">
 <segment>
@@ -28190,11 +28211,6 @@ necessary for solenoids?</text>
 <pinref part="RN7" gate="B" pin="1"/>
 <wire x1="200.66" y1="35.56" x2="203.2" y2="35.56" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="SRV2" gate="-3" pin="S"/>
-<wire x1="-17.78" y1="-5.08" x2="-20.32" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-22.86" y="-7.62" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="PE3" class="0">
 <segment>
@@ -28204,12 +28220,6 @@ necessary for solenoids?</text>
 <wire x1="198.12" y1="35.56" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="RN7" gate="C" pin="1"/>
 <wire x1="198.12" y1="30.48" x2="203.2" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SRV1" gate="-3" pin="S"/>
-<wire x1="-17.78" y1="7.62" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
-<label x="-22.86" y="5.08" size="1.778" layer="95"/>
-<label x="-22.86" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PE1" class="0">
@@ -28281,6 +28291,11 @@ necessary for solenoids?</text>
 <wire x1="175.26" y1="111.76" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
 <label x="177.8" y="112.395" size="1.6764" layer="95"/>
 <pinref part="IC3" gate="1" pin="(OC1B/PCINT6)PB6"/>
+</segment>
+<segment>
+<wire x1="-17.78" y1="-5.08" x2="-20.32" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-22.86" y="-5.08" size="1.778" layer="95"/>
+<pinref part="X3" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="PH3" class="0">
@@ -28448,6 +28463,11 @@ necessary for solenoids?</text>
 <wire x1="175.26" y1="114.3" x2="200.66" y2="114.3" width="0.1524" layer="91"/>
 <label x="177.8" y="114.935" size="1.6764" layer="95"/>
 <pinref part="IC3" gate="1" pin="(OC0A/OC1C/PCINT7)PB7"/>
+</segment>
+<segment>
+<wire x1="-17.78" y1="-17.78" x2="-20.32" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-22.86" y="-17.78" size="1.778" layer="95"/>
+<pinref part="X1" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="VUCAP" class="0">
@@ -29219,6 +29239,48 @@ necessary for solenoids?</text>
 <net name="N$37" class="0">
 <segment>
 <wire x1="83.82" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PA7" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="(AD7)PA7"/>
+<wire x1="175.26" y1="137.16" x2="187.96" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-4" pin="S"/>
+<wire x1="-17.78" y1="-20.32" x2="-20.32" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-22.86" y="-20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PA6" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="(AD6)PA6"/>
+<wire x1="175.26" y1="134.62" x2="187.96" y2="134.62" width="0.1524" layer="91"/>
+<label x="177.8" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-4" pin="S"/>
+<wire x1="-17.78" y1="-7.62" x2="-20.32" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-22.86" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PA5" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="(AD5)PA5"/>
+<wire x1="175.26" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
+<label x="177.8" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X4" gate="-4" pin="S"/>
+<wire x1="-17.78" y1="5.08" x2="-20.32" y2="5.08" width="0.1524" layer="91"/>
+<label x="-22.86" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PA4" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="(AD4)PA4"/>
+<wire x1="175.26" y1="129.54" x2="187.96" y2="129.54" width="0.1524" layer="91"/>
+<label x="177.8" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
