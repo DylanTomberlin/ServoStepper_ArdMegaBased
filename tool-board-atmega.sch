@@ -28619,12 +28619,6 @@ necessary for solenoids?</text>
 <label x="320.04" y="73.66" size="1.778" layer="95"/>
 <pinref part="X2" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<pinref part="U$9" gate="G$1" pin="P$1"/>
-<wire x1="398.78" y1="-25.4" x2="406.4" y2="-25.4" width="0.1524" layer="91"/>
-<label x="401.32" y="-25.4" size="1.778" layer="95"/>
-<pinref part="F2" gate="G$1" pin="2"/>
-</segment>
 </net>
 <net name="RXL" class="0">
 <segment>
@@ -29333,6 +29327,13 @@ necessary for solenoids?</text>
 <pinref part="U$6" gate="G$1" pin="P$1"/>
 <wire x1="431.8" y1="-111.76" x2="457.2" y2="-111.76" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+24V"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="P$1"/>
+<pinref part="F2" gate="G$1" pin="2"/>
+<wire x1="398.78" y1="-25.4" x2="406.4" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
