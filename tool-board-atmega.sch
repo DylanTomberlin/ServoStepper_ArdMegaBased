@@ -27093,6 +27093,10 @@ type V526-0, grid 2.5 mm</description>
 <part name="C23" library="SmartPrj" deviceset="C-EU" device="0603-RND" value=".1u"/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="P+21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+24V" device=""/>
+<part name="R19" library="SmartPrj" deviceset="R-EU_" device="R0603" value="200m"/>
+<part name="R20" library="SmartPrj" deviceset="R-EU_" device="R0603" value="200m"/>
+<part name="R21" library="SmartPrj" deviceset="R-EU_" device="R0603" value="200m"/>
+<part name="R22" library="SmartPrj" deviceset="R-EU_" device="R0603" value="200m"/>
 </parts>
 <sheets>
 <sheet>
@@ -27635,7 +27639,7 @@ attached to mcu reset?</text>
 <attribute name="VALUE" x="57.785" y="51.308" size="1.778" layer="96"/>
 </instance>
 <instance part="R16" gate="G$1" x="45.72" y="55.88" smashed="yes">
-<attribute name="NAME" x="47.3964" y="58.42" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="50.9524" y="57.912" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="45.212" y="57.785" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND13" gate="1" x="20.32" y="12.7" smashed="yes">
@@ -27792,6 +27796,22 @@ attached to mcu reset?</text>
 </instance>
 <instance part="P+21" gate="1" x="-15.24" y="-45.72" smashed="yes">
 <attribute name="VALUE" x="-17.78" y="-50.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R19" gate="G$1" x="-48.26" y="-127" smashed="yes">
+<attribute name="NAME" x="-46.5836" y="-124.46" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-48.768" y="-125.095" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R20" gate="G$1" x="-48.26" y="-119.38" smashed="yes">
+<attribute name="NAME" x="-46.5836" y="-116.84" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-48.768" y="-117.475" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R21" gate="G$1" x="182.88" y="-121.92" smashed="yes">
+<attribute name="NAME" x="184.5564" y="-119.38" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="182.372" y="-120.015" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R22" gate="G$1" x="182.88" y="-129.54" smashed="yes">
+<attribute name="NAME" x="184.5564" y="-127" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="182.372" y="-127.635" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -28126,16 +28146,16 @@ attached to mcu reset?</text>
 <junction x="198.12" y="-91.44"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="ISENB"/>
-<wire x1="190.5" y1="-129.54" x2="172.72" y2="-129.54" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="177.8" y1="-129.54" x2="172.72" y2="-129.54" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="ISENA"/>
-<wire x1="190.5" y1="-121.92" x2="170.18" y2="-121.92" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="-121.92" x2="170.18" y2="-116.84" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="170.18" y1="-116.84" x2="165.1" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="-121.92" x2="170.18" y2="-121.92" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
@@ -28228,16 +28248,16 @@ attached to mcu reset?</text>
 <junction x="-22.86" y="-177.8"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="ISENB"/>
-<wire x1="-40.64" y1="-127" x2="-58.42" y2="-127" width="0.1524" layer="91"/>
 <pinref part="GND33" gate="1" pin="GND"/>
+<wire x1="-53.34" y1="-127" x2="-58.42" y2="-127" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="ISENA"/>
-<wire x1="-40.64" y1="-119.38" x2="-60.96" y2="-119.38" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="-119.38" x2="-60.96" y2="-114.3" width="0.1524" layer="91"/>
 <pinref part="GND34" gate="1" pin="GND"/>
 <wire x1="-60.96" y1="-114.3" x2="-66.04" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-119.38" x2="-60.96" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND35" gate="1" pin="GND"/>
@@ -28940,9 +28960,9 @@ attached to mcu reset?</text>
 <wire x1="226.06" y1="-137.16" x2="238.76" y2="-137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="104.14" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
-<label x="85.09" y="74.295" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL7"/>
+<wire x1="175.26" y1="73.66" x2="193.04" y2="73.66" width="0.1524" layer="91"/>
+<label x="191.77" y="73.025" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="(A8)PC0"/>
 </segment>
 </net>
 <net name="NRESET" class="0">
@@ -28959,9 +28979,9 @@ attached to mcu reset?</text>
 <label x="231.14" y="-127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="104.14" y1="66.04" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
-<label x="85.09" y="66.675" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL4(OC5B)"/>
+<wire x1="175.26" y1="81.28" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="191.77" y="80.645" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="(A11)PC3"/>
 </segment>
 </net>
 <net name="NSTEP" class="0">
@@ -28971,9 +28991,9 @@ attached to mcu reset?</text>
 <label x="231.14" y="-124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
-<label x="85.09" y="64.135" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL3(OC5A)"/>
+<wire x1="193.04" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
+<label x="191.77" y="83.185" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="(A12)PC4"/>
 </segment>
 </net>
 <net name="DIR" class="0">
@@ -28983,9 +29003,9 @@ attached to mcu reset?</text>
 <label x="233.68" y="-129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
-<label x="85.09" y="69.215" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL5(OC5C)"/>
+<wire x1="193.04" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
+<label x="191.77" y="78.105" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="(A10)PC2"/>
 </segment>
 </net>
 <net name="MODE2" class="0">
@@ -28995,9 +29015,9 @@ attached to mcu reset?</text>
 <label x="231.14" y="-114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="104.14" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
-<label x="85.09" y="56.515" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL0(ICP4)"/>
+<wire x1="175.26" y1="91.44" x2="193.04" y2="91.44" width="0.1524" layer="91"/>
+<label x="191.77" y="90.805" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="(A15)PC7"/>
 </segment>
 </net>
 <net name="MODE1" class="0">
@@ -29007,9 +29027,9 @@ attached to mcu reset?</text>
 <label x="231.14" y="-116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
-<label x="85.09" y="59.055" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL1(ICP5)"/>
+<wire x1="193.04" y1="88.9" x2="175.26" y2="88.9" width="0.1524" layer="91"/>
+<label x="191.77" y="88.265" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="(A14)PC6"/>
 </segment>
 </net>
 <net name="MODE0" class="0">
@@ -29019,9 +29039,9 @@ attached to mcu reset?</text>
 <label x="231.14" y="-119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="104.14" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
-<label x="85.09" y="61.595" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL2(T5)"/>
+<wire x1="175.26" y1="86.36" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
+<label x="191.77" y="85.725" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="(A13)PC5"/>
 </segment>
 </net>
 <net name="DECAY" class="0">
@@ -29038,9 +29058,9 @@ attached to mcu reset?</text>
 <junction x="256.54" y="-121.92"/>
 </segment>
 <segment>
-<wire x1="104.14" y1="71.12" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
-<label x="85.09" y="71.755" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL6"/>
+<wire x1="175.26" y1="76.2" x2="193.04" y2="76.2" width="0.1524" layer="91"/>
+<label x="191.77" y="75.565" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="(A9)PC1"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -29538,6 +29558,11 @@ attached to mcu reset?</text>
 <wire x1="-5.08" y1="-109.22" x2="7.62" y2="-109.22" width="0.1524" layer="91"/>
 <label x="0" y="-109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="1" pin="(TOSC2)PG3"/>
+<wire x1="175.26" y1="-5.08" x2="180.34" y2="-5.08" width="0.1524" layer="91"/>
+<label x="177.8" y="-5.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MODE2-1" class="0">
 <segment>
@@ -29546,9 +29571,9 @@ attached to mcu reset?</text>
 <label x="0" y="-111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="73.66" x2="175.26" y2="73.66" width="0.1524" layer="91"/>
-<label x="176.53" y="74.295" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="(A8)PC0"/>
+<wire x1="83.82" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
+<label x="95.25" y="73.025" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="PL7"/>
 </segment>
 </net>
 <net name="MODE1-1" class="0">
@@ -29558,9 +29583,9 @@ attached to mcu reset?</text>
 <label x="0" y="-114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="175.26" y1="76.2" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
-<label x="176.53" y="76.835" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="(A9)PC1"/>
+<wire x1="104.14" y1="71.12" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
+<label x="95.25" y="70.485" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="PL6"/>
 </segment>
 </net>
 <net name="MODE0-1" class="0">
@@ -29570,9 +29595,9 @@ attached to mcu reset?</text>
 <label x="0" y="-116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="78.74" x2="175.26" y2="78.74" width="0.1524" layer="91"/>
-<label x="176.53" y="79.375" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="(A10)PC2"/>
+<wire x1="83.82" y1="68.58" x2="104.14" y2="68.58" width="0.1524" layer="91"/>
+<label x="95.25" y="67.945" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="PL5(OC5C)"/>
 </segment>
 </net>
 <net name="NSTEP-1" class="0">
@@ -29582,9 +29607,9 @@ attached to mcu reset?</text>
 <label x="0" y="-121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="175.26" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
-<label x="176.53" y="81.915" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="(A11)PC3"/>
+<wire x1="104.14" y1="66.04" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
+<label x="95.25" y="65.405" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="PL4(OC5B)"/>
 </segment>
 </net>
 <net name="NENBL-1" class="0">
@@ -29594,9 +29619,9 @@ attached to mcu reset?</text>
 <label x="0" y="-124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
-<label x="176.53" y="84.455" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="(A12)PC4"/>
+<wire x1="83.82" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
+<label x="95.25" y="62.865" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="PL3(OC5A)"/>
 </segment>
 </net>
 <net name="DIR-1" class="0">
@@ -29606,9 +29631,9 @@ attached to mcu reset?</text>
 <label x="2.54" y="-127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="175.26" y1="86.36" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
-<label x="176.53" y="86.995" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="(A13)PC5"/>
+<wire x1="104.14" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
+<label x="95.25" y="60.325" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="PL2(T5)"/>
 </segment>
 </net>
 <net name="DECAY-1" class="0">
@@ -29625,9 +29650,9 @@ attached to mcu reset?</text>
 <junction x="25.4" y="-119.38"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="88.9" x2="175.26" y2="88.9" width="0.1524" layer="91"/>
-<label x="176.53" y="89.535" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="(A14)PC6"/>
+<wire x1="83.82" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<label x="95.25" y="57.785" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="PL1(ICP5)"/>
 </segment>
 </net>
 <net name="NFAULT-1" class="0">
@@ -29635,6 +29660,11 @@ attached to mcu reset?</text>
 <pinref part="U$7" gate="G$1" pin="NFAULT"/>
 <wire x1="-5.08" y1="-132.08" x2="7.62" y2="-132.08" width="0.1524" layer="91"/>
 <label x="0" y="-132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="1" pin="(ALE)PG2"/>
+<wire x1="175.26" y1="-7.62" x2="180.34" y2="-7.62" width="0.1524" layer="91"/>
+<label x="177.8" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="NSLEEP-1" class="0">
@@ -29644,9 +29674,9 @@ attached to mcu reset?</text>
 <wire x1="-5.08" y1="-134.62" x2="7.62" y2="-134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
-<label x="176.53" y="92.075" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="(A15)PC7"/>
+<wire x1="83.82" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
+<label x="95.25" y="55.245" size="1.778" layer="95" rot="R180"/>
+<pinref part="IC3" gate="1" pin="PL0(ICP4)"/>
 </segment>
 </net>
 <net name="NRESET-1" class="0">
@@ -29669,6 +29699,34 @@ attached to mcu reset?</text>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="-33.02" y1="-55.88" x2="-33.02" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-30.48" y="-50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="ISENB"/>
+<wire x1="-40.64" y1="-127" x2="-43.18" y2="-127" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="ISENA"/>
+<wire x1="-40.64" y1="-119.38" x2="-43.18" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$48" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="ISENA"/>
+<wire x1="190.5" y1="-121.92" x2="187.96" y2="-121.92" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="ISENB"/>
+<wire x1="190.5" y1="-129.54" x2="187.96" y2="-129.54" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
