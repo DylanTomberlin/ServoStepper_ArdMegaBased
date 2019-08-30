@@ -27287,7 +27287,6 @@ Grid 2.54 mm&lt;p&gt;
 <part name="C9" library="SmartPrj" deviceset="C-EU" device="0603-RND" value="100n"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="C7" library="SmartPrj" deviceset="C-EU" device="0603-RND" value="100n"/>
-<part name="RESET-EN" library="jumper" deviceset="SJ" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="C10" library="SmartPrj" deviceset="C-EU" device="0603-RND" value="1u"/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
@@ -27573,10 +27572,6 @@ attached to mcu reset?</text>
 <instance part="C7" gate="G$1" x="525.78" y="81.28" smashed="yes" rot="MR270">
 <attribute name="NAME" x="525.399" y="79.756" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="530.479" y="79.756" size="1.778" layer="96" rot="MR270"/>
-</instance>
-<instance part="RESET-EN" gate="1" x="538.48" y="96.52" smashed="yes">
-<attribute name="NAME" x="533.4" y="92.71" size="1.778" layer="95"/>
-<attribute name="VALUE" x="535.94" y="92.71" size="1.778" layer="96"/>
 </instance>
 <instance part="GND18" gate="1" x="510.54" y="58.42" smashed="yes">
 <attribute name="VALUE" x="508" y="55.88" size="1.778" layer="96"/>
@@ -28863,18 +28858,9 @@ attached to mcu reset?</text>
 <pinref part="RN1" gate="A" pin="1"/>
 </segment>
 <segment>
-<wire x1="530.86" y1="81.28" x2="533.4" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="533.4" y1="81.28" x2="546.1" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="546.1" y1="81.28" x2="548.64" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="533.4" y1="96.52" x2="533.4" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="543.56" y1="96.52" x2="546.1" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="546.1" y1="96.52" x2="546.1" y2="81.28" width="0.1524" layer="91"/>
-<junction x="533.4" y="81.28"/>
-<junction x="546.1" y="81.28"/>
+<wire x1="530.86" y1="81.28" x2="548.64" y2="81.28" width="0.1524" layer="91"/>
 <label x="535.94" y="81.28" size="1.778" layer="95"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<pinref part="RESET-EN" gate="1" pin="1"/>
-<pinref part="RESET-EN" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="M8RXD" class="0">
